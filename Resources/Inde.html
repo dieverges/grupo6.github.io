@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conecta BA</title>
+    
+</head>
+<body>
+    
+
+<div>
+<script>
+var i = 0;
+var images = [];
+var time = 10000;
+
+images[0]='ba1.jpg'
+images[1]='ba2.jpg'
+images[2]='ba3.jpg'
+
+function changeImg(){
+
+document.slide.src = images[i];
+
+if(i < images.length - 1){
+    i++;
+
+} else {
+    i = 0;
+}
+
+setTimeout("changeImg()", time);
+}
+
+window.onload = changeImg;
+
+
+</script>
+<img name="slide" width="800" height="300">
+</div>
+</body>
+</html5>
