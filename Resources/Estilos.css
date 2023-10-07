@@ -189,6 +189,7 @@ div.ventana1{
     margin-left: 10%;
     background-color: none(51, 35, 35);
     border-radius: 0.4em;
+    overflow: hidden scroll;
 }
 div.ventana1 > h2{
     text-align: center;
@@ -215,7 +216,7 @@ div.ventana2 {
     margin-left: 10%;
     background-color: none;
     border-radius: 0.4em;
-    
+    overflow: hidden scroll;
 }
 div.ventana2 > h2{
     text-align: center;
@@ -244,6 +245,7 @@ div.ventana3 {
     background-color: none;
     z-index: 0.2;
     border-radius: 0.4em;
+    overflow: hidden scroll;
 }
 div.ventana3 > h2{
     text-align: center;
@@ -257,6 +259,7 @@ div.ventana3 > p {
     text-align: justify;
     margin-left: 0.5em;
     margin-right: 0.5em;
+    
 }
 .Platense {
 width: 100%;
@@ -312,6 +315,7 @@ div.Right-text {
         position: relative;
         top: 0;
         text-align: start;
+        overflow: hidden scroll;
     }
 
 div.Right-text > h3 {
