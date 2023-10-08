@@ -78,11 +78,11 @@ font-weight: 600;
 section > div.intro {
     font-weight: 600;
     color: gold;
-    width: 20em;
+    width: 30%;
     height: 10em;
     text-align: justify;
     top: 60%;
-    left: 75%;
+    Right: 25vh;
     background-color:  none;
     border: 1em  gold;
     border-radius: 1em;
@@ -95,6 +95,7 @@ section > div.intro {
 .btn{
     width: 5em;
     height: 2.5em;
+    right: 10%;
     font-size: 1em;
     background-color:gold;
     border-radius: 0.3em;
@@ -108,7 +109,7 @@ section > div.intro {
     }
 button.conec {
     background-color: transparent;
-    color: gray;
+    color: black;
     border: 1px solid white;
     border-radius: 0.3em;
     width: 40%;
@@ -136,16 +137,14 @@ button.share:hover {
     color: rgb(46, 40, 40);
 }
 
-
-
 .btn:hover {
     background-color: rgba(172, 164, 50, 0.877);
     color: rgb(46, 40, 40) ;
     cursor: grab;
     transform: scale(1.2);
     border-radius: 0.3em;
-
 }
+
 div.Sedes {
     position: relative;
     text-align: center;
