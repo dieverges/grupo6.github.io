@@ -28,7 +28,6 @@ border-bottom: 0.2em solid black;
 position: relative;
 margin-top: 0;
 z-index: 1;
-overflow: hidden scroll;
 }
 .Logo {
     box-sizing: border-box;
@@ -66,9 +65,9 @@ font-weight: 600;
     display: inline-block;
     padding: 0.8em;
 }
+
 .Conecta {
     position: relative;
-    min-width: 100vh;
     width: 100%;
     height: 80vh;
     background-image: url(https://www.clarin.com/2020/12/23/u8fJXecdF_1256x620__1.jpg);
@@ -179,6 +178,10 @@ button.conoce {
     padding: 0.5em;
     border: 1px solid white;
 }
+button.conoce:hover {
+background-color: white;
+color: #000;
+}
 div.ventana1{
     color: rgb(46, 40, 40);
     font-weight: 600;
@@ -204,6 +207,7 @@ div.ventana1 > p {
     text-align: justify;
     margin-left: 0.5em;
     margin-right: 0.5em;
+    font-size: medium;
 }
 div.ventana2 {
     color: rgb(46, 40, 40);
