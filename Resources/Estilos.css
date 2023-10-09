@@ -90,6 +90,7 @@ section > div.intro {
     position: absolute;
     background-color: none;
     text-wrap: wrap;
+
 }
 
 .btn{
@@ -495,7 +496,7 @@ footer {
 
 }
 .back {
-    background-image: url('hawaii.jpg');
+    background-image: url('honolulu.jpg');
     background-size: 100% 30em ;
     background-repeat: no-repeat;
     border: 0.3em solid black;
