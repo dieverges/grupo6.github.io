@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="./Resources/Estilos.css">
+    <script></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entradas</title>
@@ -17,7 +18,7 @@
     </nav>
         </header>
         <section>
-        <div class="contenedor">
+<div class="contenedor">
 <script>//Carrusel determinado por tiempo
 
 var i = 0;
@@ -45,7 +46,6 @@ setTimeout("changeImg()", time);
 window.onload = changeImg;
 </script>
 <img src="Resources/ba1.jpg" class="carru" name="slide" alt="Carrousel">
-
 <div class="atras butones">
 &#60;
 </div>
@@ -82,9 +82,7 @@ function carrousel(contenedor){
         cont = 0;
 
         }
-
     }
-    
 })}
 document.addEventListener("DOMContentLoaded", () => {
     let contenedor = document.querySelector('.contenedor');
@@ -94,44 +92,58 @@ document.addEventListener("DOMContentLoaded", () => {
 })
 
 </script>
-
 </div>
 
 </section>
+<div class="promo" id="promo">
+<div class="block uno">
+<h2 class="titu">Estudiante</h2><br>
+<span class="dto"><p>Tiene un descuento</p></span><br><br>
+<span class="porce"><p>80% off</p></span><br><br>
+<span class="docu"><p>*Presentar documentación</p></span>
+</div>
+<div class="block dos">
+<h2 class="titu">Trainee</h2><br>
+<span class="dto"><p>Tiene un descuento</p></span><br><br>
+<span class="porce"><p>50% off</p></span><br><br>
+<span class="docu"><p>*Presentar documentación</p></span>
+</div>
+<div class="block tres">
+<h2 class="titu">Junior</h2><br>
+<span class="dto"><p>Tiene un descuento</p></span><br><br>
+<span class="porce"><p>15% off</p></span><br><br>
+<span class="docu"><p>*Presentar documentación</p></span>
+</div>
 
+</div>
 <div class="back">
 
 <section id="formularios" class="formularios">
     
     <h2>Reservá tu lugar</h2><br>
-    <form action="datos.php" method="get">
-    <label for="name"></label>
-    <input class="cuadro" type="text" placeholder="Escribe tu nombre" name="nombre" id="name">
+    <form method="dialog">
+    <label for="nombre"></label>
+    <input class="cuadro" type="text" placeholder="Escribe tu nombre" name="nombre" id="nombre">
 
     <label for="apellido"></label>
     <input class="cuadro" type="text" placeholder="Escribe tu apellido" name="apellido" id="apellido">
 
-    <label for="pass"></label>
-    <input class="cuadro" type="password" placeholder="Escribe tu clave" name="Pass" id="pass">
+    <label for="cantidad"></label>
+    <input class="cuadro" type="number" placeholder="Cantidad de Tickets" name="cantidad" id="cantidad">
 
-    <label id="consigna" for="Pais">País</label>
-    <select class="selec" name="Elige" id="Pais">
-
-    <option value="Argentina">Argentina</option>
-    <option value="Chile">Chile</option>
-    <option value="Uruguay">Uruguay</option>
-    <option value="Paraguay">Paraguay</option>
-    <option value="Bolivia">Bolivia</option>
-    <option value="Peru">Perú</option>
-    <option value="Brasil">Brasil</option>
-    <option value="Colombia">Colombia</option>
-    <option value="Venezuela">Venezuela</option>
-    <option value="Mexico">México</option>
-
+    <label id="consigna" for="categoria">Categoría</label>
+    <select class="selec" name="categoria" id="categoria" onchange="">
+    <option id="estudiante" value="estudiante">Estudiante</option>
+    <option id="trainee" value="trainee">Trainee</option>
+    <option id="junior" value="junior">Junior</option>
     </select>
-
-    <input  id="tonbo" type="submit" value="Reservar">
-
+    <p id="resultado"></p>
+    <label id="result" for="resultado"></label>
+    <div class="tonbes">
+    <input  id="tonbo" type="submit" value="Calcular">
+    <input id="rese" type="submit" value="Reservar">
+</div>
+    
     </form>
 </section>
 </div>
@@ -148,6 +160,6 @@ document.addEventListener("DOMContentLoaded", () => {
 <a class="adc" href="#" target="_blank">Arrepentimiento de Compra</a>
 </footer>
 </div>
-
+<script src="./Js/Main.js" defer></script>
 </body>
 </html>

@@ -504,6 +504,7 @@ footer {
 
 .cuadro {
     margin-bottom: 20px;
+    color: white;
     background-color: rgb(4, 51, 59);
     padding: 16px;
     border-radius: 4px;
@@ -511,13 +512,17 @@ footer {
 }
 
 .selec {
+    margin-left: 1vh;
     margin-top: 10px;
     margin-bottom: 20px;
     background-color: rgba(2, 61, 27, 0.877);
     color: white;
-    border: 1px solid rgb(78, 176, 194);
     align-items: center;
-    
+    text-align: center;
+    }
+.selec:hover{
+    border: 1px solid rgb(78, 176, 194);
+
 }
 #consigna {
     color: white;
@@ -527,10 +532,81 @@ footer {
 
 #tonbo{
     margin: 16px;
-    width: 100%;
+    width: 40%;
     background-color: rgb(15, 71, 71);
     color: white;
     padding: 12px;
-    font-size: 23px;
+    font-size: 15px;
+}
+#rese{
+    width: 40%;
+    background-color: rgb(15, 71, 71);
+    color: white;
+    padding: 12px;
+    font-size: 15px;
 }
 
+
+
+#answer {
+    text-align: center;
+    color: rgba(172, 164, 50, 0.877);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#resultado {
+    color: rgba(172, 164, 50, 0.877);
+    text-align: center;
+    
+}
+.block{
+    display: inline-block;
+    background-color: rgb(242, 245, 248);
+    border-radius: 1vh;
+    color: rgb(41, 96, 105);
+    width: 30vh;
+    height: 30vh;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 5vh;
+    margin-left: 25vh;
+    margin-bottom: 5vh;
+    align-items: center;
+}
+.block > h2 {
+    margin-top: 2vh;
+    font-size: 25px;
+}
+.titu {
+    margin: auto;
+    margin-top: 1vh;
+    text-align: center;
+}
+div.promo {
+    width: 100%;
+    height: 40vh;
+}
+.dto {
+    text-align: center;
+    text-decoration: bold;
+}
+span.porce{
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    text-decoration: underline;
+}
+span.docu{
+    text-align: center;
+    color: gray;
+    
+}
+.uno{
+    border-color: blue;
+}
+.dos{
+    border-color: green;
+}
+.tres{
+    border-color: red;
+}
