@@ -1,0 +1,622 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+@import url('https://cdn.britannica.com/63/188963-050-2C94FEC2/Night-view-obelisk-Buenos-Aires.jpg');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Mooli', sans-serif;
+    font-size: 20px;
+
+}
+
+body{
+    background-color: rgba(255, 255, 255, 0.658);
+
+}
+
+.Header {
+background-color: rgb(46, 40, 40);
+display: flex;
+justify-content: space-between;
+align-items: center;
+min-height: 3em;
+max-height: 5em;
+width: 100%;
+padding: 1em 10%;
+border-bottom: 0.2em solid black;
+position: relative;
+margin-top: 0;
+z-index: 1;
+}
+.Logo {
+    box-sizing: border-box;
+    width: auto;
+    height: 100%;
+}
+.Header .Logo{
+    cursor: pointer;
+}
+.Header .Logo img {
+    margin-left: 1em;
+    height: 6em;
+    width: auto;
+    transition: all 0.3s;
+    scale: 0.9;
+}
+h1 {
+    color: #fff190;
+    font-size: 30px;
+    text-decoration: bold;
+}
+.Header .Logo img:hover {
+    transform: scale(1.2);
+}
+.Header #navegacion  li a{
+color: #fff190;
+text-decoration: none;
+font-weight: 600;
+}
+.Header #navegacion  li a:hover{
+    background-color: gold;
+    color: rgb(46, 40, 40);
+}
+#navegacion li{
+    display: inline-block;
+    padding: 0.8em;
+}
+
+.Conecta {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-image: url(https://www.clarin.com/2020/12/23/u8fJXecdF_1256x620__1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    }
+
+section > div.intro {
+    font-weight: 600;
+    color: gold;
+    width: 30%;
+    height: 10em;
+    text-align: justify;
+    top: 60%;
+    Right: 25vh;
+    background-color:  none;
+    border: 1em  gold;
+    border-radius: 1em;
+    background-color: none;
+    position: absolute;
+    background-color: none;
+    text-wrap: wrap;
+
+}
+
+.btn{
+    width: 5em;
+    height: 2.5em;
+    right: 10%;
+    font-size: 1em;
+    background-color:gold;
+    border-radius: 0.3em;
+    color: rgb(100, 67, 24);
+    transition: all 0.3s;
+    border: none;
+}
+.botones {
+    width: 100%;
+    display: flex ;
+    }
+button.conec {
+    background-color: transparent;
+    color: black;
+    border: 1px solid white;
+    border-radius: 0.3em;
+    width: 40%;
+    height: 3em;
+    font-size: medium;
+    margin: 5%;
+    transition: 0.3s;
+}
+button.share{
+    background-color: green;
+    border-radius: 0.3em;
+    color: white;
+    width: 50%;
+    height: 3em;
+    font-size: medium;
+    margin: 5%;
+}
+
+button.conec:hover {
+background-color: white;
+color: rgb(46, 40, 40);
+}
+button.share:hover {
+    background-color: white;
+    color: rgb(46, 40, 40);
+}
+
+.btn:hover {
+    background-color: rgba(172, 164, 50, 0.877);
+    color: rgb(46, 40, 40) ;
+    cursor: grab;
+    transform: scale(1.2);
+    border-radius: 0.3em;
+}
+
+div.Sedes {
+    position: relative;
+    text-align: center;
+    position: relative center;
+    font-weight: 600;
+    color: rgb(46, 40, 40);
+    text-decoration: bold;
+}
+div.Sedes >h3{
+    font-size: medium;
+}
+#social {
+    height: 30em;
+    width: 100%;
+    position: relative;
+    top: 1em;
+    display: flex;
+}
+.Tercero #Adherite {
+    height: 20em;
+    position: relative;
+    top: 6em;
+}
+button.conoce {
+    background-color: transparent;
+    color: white;
+    height: 10%;
+    font-size: small;
+    margin-left: 1em;
+    padding: 0.5em;
+    border: 1px solid white;
+}
+button.conoce:hover {
+background-color: white;
+color: #000;
+}
+div.ventana1{
+    color: rgb(46, 40, 40);
+    font-weight: 600;
+    text-align: justify;
+    padding: 0.3em;
+    width: 20%;
+    height: 25em;
+    margin-left: 10%;
+    background-color: none(51, 35, 35);
+    border-radius: 0.4em;
+    overflow: hidden scroll;
+}
+div.ventana1 > h2{
+    text-align: center;
+    font-style: italic;
+    color: rgb(100, 67, 24) ;
+}
+div.ventana1 > h4{
+text-align: center;
+font-size: large;
+}
+div.ventana1 > p {
+    text-align: justify;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    font-size: medium;
+}
+div.ventana2 {
+    color: rgb(46, 40, 40);
+    font-weight: 600;
+    text-align: justify;
+    padding: 0.3em;
+    width: 20%;
+    height: 25em;
+    position: relative;
+    margin-left: 10%;
+    background-color: none;
+    border-radius: 0.4em;
+    overflow: hidden scroll;
+}
+div.ventana2 > h2{
+    text-align: center;
+    font-style: italic;
+    color: rgb(100, 67, 24);
+}
+div.ventana2 > h4{
+text-align: center;
+font-size: large;
+}
+div.ventana2 > p {
+    font-size: medium;
+    text-align: justify;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+div.ventana3 {
+    color: rgb(46, 40, 40);
+    font-weight: 600;
+    text-align: justify;
+    padding: 0.3em;
+    width: 20%;
+    height: 25em;
+    position: relative;
+    margin-left: 10%;
+    background-color: none;
+    z-index: 0.2;
+    border-radius: 0.4em;
+    overflow: hidden scroll;
+}
+div.ventana3 > h2{
+    text-align: center;
+}
+div.ventana3 > h4{
+text-align: center;
+font-size: large;
+}
+div.ventana3 > p {
+    font-size: medium;
+    text-align: justify;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    
+}
+.Platense {
+width: 100%;
+height: 10em;
+position: relative;
+align-content: center;
+border-radius: 2em;
+transition: all 0.3s;
+}
+.Platense:hover {
+    transform: scale(1.05);
+}
+.Ferro {
+    width: 100%;
+    height: 10em;
+    position: relative;
+    align-content: center;
+    border-radius: 2em;
+    transition: all 0.3s;
+    }
+    .Ferro:hover {
+        transform: scale(1.05);
+    }
+    .Banfield {
+    width: 100%;
+    height: 10em;
+    position: relative;
+    align-content: center;
+    border-radius: 2em;
+    transition: all 0.3s;
+    }
+    .Banfield:hover {
+        transform: scale(1.05);
+    }
+
+    #Adherite {
+        width: 100;
+        height: 50em;
+        position: relative;
+        top: 0;
+        display: flex;
+    }
+    
+    img.Playa {
+        width: 49%;
+        height: 100%;
+    }
+div.Right-text {
+        background-color: rgba(31, 28, 28, 0.829);
+        margin-left: 0.2em;
+        width: 51%;
+        height: 100%;
+        position: relative;
+        top: 0;
+        text-align: start;
+        overflow: hidden scroll;
+    }
+
+div.Right-text > h3 {
+        color: rgb(242, 245, 248);
+        margin-left: 0.8em;
+        margin-top: 0.8em;
+        text-align: start;
+    }
+div.Right-text > p {
+        color: rgb(242, 245, 248);
+        margin-left: 0.8em;
+        margin-right: 0.8em;
+        margin-top: 0.8em;
+        text-align: start;
+    }
+    
+#Platense:hover {
+        transform: scale(1.3);
+        transition: all 0.3s;
+}
+
+.Ingresar {
+    width: 100%;
+    background-color: rgb(50, 75, 68);
+}
+
+.igram {
+    width: 20%;
+    color: violet;
+    text-decoration: none;
+align-items: center;
+font-size: smaller;
+text-align: center;
+}
+
+.igram:hover {
+    color: rgb(46, 40, 40);
+}
+
+.face {
+    width: 20%;
+    color: violet;
+    font-size: smaller;
+    text-decoration: none;
+    text-align: center;
+}
+
+.face:hover {
+    color: rgb(46, 40, 40);
+}
+
+#igram {
+    width: 1em;
+    position: relative;
+    margin-right: 10%;
+}
+
+#face {
+width: 1em;
+position: relative;
+margin-right: 10%;
+}
+
+a.tyc{
+    width: 30%;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    color: violet;
+    font-size: smaller;
+}
+
+a.tyc:hover {
+    color: rgb(46, 40, 40);
+}
+
+a.adc{
+    width: 30%;
+    font-size: smaller;
+    align-items: right;
+    text-decoration: none;
+    position: relative;
+    color: violet;
+    text-align: center;
+}
+
+a.adc:hover{
+color: rgb(46, 40, 40);
+}
+
+.card {
+border: 1px solid gray;
+}
+
+footer {
+    align-items: center;
+    height: 10em;
+    background-color: rgb(50, 75, 68);
+    position: relative;
+    margin-top: 8em;
+    display: flex ;
+}
+.contenedor {
+    top: 10%;
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+.butones {
+    font-size: 30px;
+    width: 5em;
+    height: 5em;
+    line-height: 5em;
+    border-radius: 50%;
+    background-color: rgba(40, 46, 46, 0.829);
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    color: gold;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.658);
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    opacity: 95%;
+}
+.butones:hover {
+    cursor: pointer;
+    transform: scale(1.2,1.2);
+}
+.atras {
+    left: 2%;
+    top: 30%;
+}
+.adelante {
+    right: 2%;
+    top: 30%;
+}
+.imagen {
+    position: cover;
+}
+.carru {
+    width: 100%;
+    height: 40em;
+    border-bottom: 0.3em solid black;
+}
+.formularios {
+    width: 400px;
+    height: 25em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: justify;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 15%;
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    justify-content: space-between;
+    background-color: rgb(4, 51, 59);
+    align-items: center;
+    position: relative;
+    margin-top: 1em;
+    margin-left: 40%;
+    margin-bottom: 1em;
+    box-shadow: 7px 13px 37px #000;
+    
+    
+
+}
+.formularios > h2 {
+    color: rgba(172, 164, 50, 0.877) ;
+    font-size: larger;
+    margin-bottom: 15px;
+    text-align: center;
+
+}
+.back {
+    background-image: url('honolulu.jpg');
+    background-size: 100% 30em ;
+    background-repeat: no-repeat;
+    border: 0.3em solid black;
+}
+
+.cuadro {
+    margin-bottom: 20px;
+    color: white;
+    background-color: rgb(4, 51, 59);
+    padding: 16px;
+    border-radius: 4px;
+    border: 2px solid rgba(50, 68, 172, 0.877);
+}
+
+.selec {
+    margin-left: 1vh;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: rgba(2, 61, 27, 0.877);
+    color: white;
+    align-items: center;
+    text-align: center;
+    }
+.selec:hover{
+    border: 1px solid rgb(78, 176, 194);
+
+}
+#consigna {
+    color: white;
+    text-shadow: 1px solid wheat;
+    font-size: large;
+}
+
+#tonbo{
+    margin: 16px;
+    width: 40%;
+    background-color: rgb(15, 71, 71);
+    color: white;
+    padding: 12px;
+    font-size: 15px;
+}
+#rese{
+    width: 40%;
+    background-color: rgb(15, 71, 71);
+    color: white;
+    padding: 12px;
+    font-size: 15px;
+}
+
+
+
+#answer {
+    text-align: center;
+    color: rgba(172, 164, 50, 0.877);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#resultado {
+    color: rgba(172, 164, 50, 0.877);
+    text-align: center;
+    
+}
+.block{
+    display: inline-block;
+    background-color: rgb(242, 245, 248);
+    border-radius: 1vh;
+    color: rgb(41, 96, 105);
+    width: 30vh;
+    height: 30vh;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 5vh;
+    margin-left: 25vh;
+    margin-bottom: 5vh;
+    align-items: center;
+}
+.block > h2 {
+    margin-top: 2vh;
+    font-size: 25px;
+}
+.titu {
+    margin: auto;
+    margin-top: 1vh;
+    text-align: center;
+}
+div.promo {
+    width: 100%;
+    height: 45vh;
+}
+.dto {
+    text-align: center;
+    text-decoration: bold;
+}
+span.porce{
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    text-decoration: underline;
+}
+span.docu{
+    text-align: center;
+    color: gray;
+    
+}
+.uno{
+    border-color: blue;
+}
+.dos{
+    border-color: green;
+}
+.tres{
+    border-color: red;
+}
+.sell {
+    font-size: 15px;
+    color: black;
+    text-align: center;
+}
+.price {
+    color: black;
+    text-align: center;
+}
