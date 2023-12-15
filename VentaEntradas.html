@@ -47,12 +47,60 @@
             <img class="caja-img" src="/Resources/images/obelisco.jpg" alt="FOTO PUBLICIDAD">
         </section>
         <div class="banner">
-            <h2>MIRA LAS CONFERENCIAS DISPONIBLES PARA VOS</h22>
-            <h5>Animate a escuchar sus historias en primera persona!</h5>
+            <h2>ENTRADAS YA DISPONIBLES!</h22>
+            <h5>PRECIO DE ENTRADA $200</h5>
             <div style="text-align: center;">
               <i class="fa-solid fa-star" style="color: #facc57;"></i><i class="fa-solid fa-star" style="color: #facc57;"></i><i class="fa-solid fa-star" style="color: #facc57;"></i>
             </div>
         </div>
+        <section>
+            <div class="caja-padre-entradas">
+                <article class="caja-card">
+                    <h1 class="tipo-entrada">ESTUDIANTE</h1>
+                    <p class="desc">Tienen un descuento</p>
+                    <p class="descuento">80%</p>
+                    <h6 class="doc">* Presentar documentacion</h6>
+                </article>
+                <article class="caja-card">
+                    <h1 class="tipo-entrada">TRAINEE</h1>
+                    <p class="desc">Tienen un descuento</p>
+                    <p class="descuento">50%</p>
+                    <h6 class="doc">* Presentar documentacion</h6>
+                </article>
+                <article class="caja-card">
+                    <h1 class="tipo-entrada">JUNIOR</h1>
+                    <p class="desc">Tienen un descuento</p>
+                    <p class="descuento">15%</p>
+                    <h6 class="doc">* Presentar documentacion</h6>
+                </article>
+            </div>
+        </section>
+        <section id="formularios" class="formularios">
+            <h2 class="reser">Reservá tu lugar</h2><br>
+            <form method="dialog">
+                <label for="nombre"></label>
+                <input class="cuadro" type="text" placeholder="Escribe tu nombre" name="nombre" id="nombre">
+        
+                <label for="apellido"></label>
+                <input class="cuadro" type="text" placeholder="Escribe tu apellido" name="apellido" id="apellido">
+        
+                <label for="cantidad"></label>
+                <input class="cuadro" type="number" placeholder="Cantidad de Tickets" name="cantidad" id="cantidad">
+        
+                <label id="consigna" for="categoria">Categoría</label>
+                <select class="selec" name="categoria" id="categoria" onchange="">
+                    <option id="estudiante" value="estudiante">Estudiante</option>
+                    <option id="trainee" value="trainee">Trainee</option>
+                    <option id="junior" value="junior">Junior</option>
+                </select>
+                <p id="resultado"></p>
+                <label id="result" for="resultado"></label>
+                <div class="tonbes">
+                    <input  id="tonbo" type="submit" value="Calcular">
+                    <input id="rese" type="submit" value="Reservar">
+                </div>
+            </form>
+        </section>
     </main>
 
     <footer class="footer">
