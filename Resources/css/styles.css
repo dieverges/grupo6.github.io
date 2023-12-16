@@ -288,3 +288,16 @@
     border-radius: 10px;
     font-size: 20px;
 }
+.botones-form-i{
+    border: solid;
+    background-color:#33b5a1;
+    padding: 8px;
+    margin: 0px 10px 10px 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+.caja-boton{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
