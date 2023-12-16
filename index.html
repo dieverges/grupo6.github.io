@@ -3,96 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conecta BA</title>
-    <link rel="stylesheet" href="./Resources/Estilos.css">
+    <title>AFA</title>
+    <link rel="stylesheet" href="./Resources/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;1,500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/edbebacb59.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="Header">
-        <div class="Logo">
-        <a href="./Index.html"><img src="./Resources/Codo-a-Codo.png" alt="CaC"></a>
-        </div>
-        <h1>BsAs Conecta</h1>
-        <nav class="nav visible" id="navegacion">
-        <ul class="nav-list">
-        <li><a href="#Inicio">Bs As Conecta</a></li>
-        <li><a href="#Sedes">Sedes</a></li>
-        <li> <a href="#Adherite">Adherite</a></li>
-        </ul>
-        </nav>
-        <button class="btn" onclick="location.href='entradas.html'"> Entradas </button>
-        </header>
-        <main class="Conecta">
-        <section class="Inicio">
-        <div class="intro">
-        <h2>Bs As Conecta</h2>
-        <p>¡Bienvenidos a Bs As Conecta!</p>
-        <p>Queremos que, de la mano de Codo a Codo, todos puedan acceder a una plataforma interactiva.</p>
-        <div class="botones">
-        <button class="boton conec" type="button">Quiero Conectar</button>
-        <button class="boton share" type="button">Compartir con Amigos</button>
-        </div>
-        </div>
+    <header>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/">
+                <img src="/Resources/images/logo.png" alt="LOGO" class="logo">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="caja-links collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="barranav">
+                  <!-- <li class="nav-item">
+                    <a class="link" href="#">Link</a>
+                  </li> -->
+                  <li class="nav-item">
+                    <a href="/VentaEntradas.html"class="boton-entradas">
+                        ENTRADAS
+                        <i class="fa-solid fa-ticket" style="color: #43ebd2;"></i>
+                    </a>
+                  </li>  
+                </ul>
+                
+              </div>
+            </div>
+          </nav>
+    </header>
+    <body>
+        <section >
+            <img class="caja-img" src="/Resources/images/cdm.jpg" alt="FOTO PUBLICIDAD">
         </section>
-    </main>
-    <br>
-    <br>
-    <section id="Sedes" class="Segundo">
-    <div class="Sedes">
-    <h3>Conocé las</h3>
-    <h2>Sedes</h2>
-    </div>
-    <div id="social">
-    <br>
-    <div  class="ventana1 card">
-    <a id="Platense" target="_blank" href="https://www.google.com/maps/place/Zufriategui+2021,+B1602AHK+Florida,+Provincia+de+Buenos+Aires/@-34.541082,-58.4849298,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcb6b931e3935b:0x60d6113340a9a5d9!8m2!3d-34.5410864!4d-58.4823549!16s%2Fg%2F11c2dzdlts?entry=ttu"><img class="Platense" src="https://cap.org.ar/wp-content/uploads/2021/10/WhatsApp-Image-2021-10-01-at-19.51.59.jpeg" alt="Cancha Platense"></a>
-    <br>
-    <br>
-    <h2>Estadio Platense</h2><br>
-    <h4>Zufriategui 2021 - Florida</h4>
-    <br>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ex quas libero quos repudiandae omnis sed, tempore laborum unde ipsam! Voluptate earum saepe id illum veritatis quaerat nobis, eaque dolor!</p>
-    </div>
-    <div class="ventana2 card">
-    <a id="Ferro" target="_blank" href="https://www.google.com/maps/place/Av.+Avellaneda+1240,+Buenos+Aires/@-34.6185236,-58.4514141,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcca3d082ec119:0xeb17df666708fe74!8m2!3d-34.618528!4d-58.4488392!16s%2Fg%2F11c871r_l8?entry=ttu"><img src="https://www.lavoz.com.ar/resizer/D9H55qMjRd2uQhOANxMtkS_agMw=/980x640/smart/filters:quality(75):format(webp)/cloudfront-us-east-1.images.arcpublishing.com/grupoclarin/MHUCVSX7SJDNRCSDKEYNHOB5AY.jpg" alt="Cancha Ferro" class="Ferro"></a>
-    <br><br>
-    <h2>Estadio Ferro</h2>
-    <br>
-    <h4>Av. Avellaneda 1240 - Caballito</h4>
-    <br>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quia nemo esse quam maxime corrupti qui omnis dolore labore? Necessitatibus explicabo excepturi laboriosam vitae, iusto id aliquid eum. Ducimus, iste?</p>
-    </div>
-    <div class="ventana3 card">
-    <a id="Banfield" target="_blank" href="https://www.google.com/maps/place/Gral.+Arenales+900,+B1828+Banfield,+Provincia+de+Buenos+Aires/@-34.7510869,-58.3883871,19.04z/data=!4m6!3m5!1s0x95bcd2bb70bed6cd:0x191e470fbf30bacc!8m2!3d-34.7508002!4d-58.3880153!16s%2Fg%2F11t3ypsln4?entry=ttu"><img class="Banfield" src="https://launion.com.ar//img/publicaciones/2022/10/06//alta/154152.jpg" alt="Cancha Banfield"></a>
-    <br><br>
-    <h2>Estadio Banfield</h2><br>
-    <h4>Gral. Arenales 900 - Banfield</h4>
-    <br>
-    <p>Lorem ipsum dolor consectetur adipisicing elit. Excepturi sit voluptate dolorum numquam, temporibus labore, autem eius impedit consequuntur rerum officiis iste iure tempora eaque doloribus sequi quaerat? Illum, blanditiis.
-    </p>
-    </div>
-    </div>
-    </section>
-    <br>
-    <section class="Tercero">
-    <div id="Adherite">
-    <img class="Playa" src="https://static.misionesonline.news/wp-content/uploads/2022/01/ueva-mar-del-plata.jpg" alt="Playa">
-    <div class="Right-text">
-    <h3>Adherite a nuestras actividades</h3>
-    <br>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores vitae nihil maxime a ullam reprehenderit pariatur, saepe consequatur at minus deserunt suscipit laborum? Repudiandae possimus dolorem cupiditate accusamus harum dolores.</p>
-    <br>
-    <button class="conoce" type="button">Conocé Más</button>
-</div>
-    </div> 
-</section>
-<div class="pie-de-pag">
-<footer>
-<a class="igram" href="https://www.instagram.com/" target="_blank"><img class="igram" id="igram" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAh1BMVEUAAAD////u7u7t7e38/Pzy8vLz8/P4+Pj39/eQkJCfn5+bm5vBwcG3t7fHx8erq6vV1dXn5+empqaGhoa8vLxoaGhLS0vd3d3Ozs7i4uJxcXFGRkaIiIivr68kJCRVVVUyMjI6Ojp+fn5qampRUVEvLy9eXl4hISEaGhoPDw94eHgVFRU/Pz8VxEz3AAARIUlEQVR4nO1d6XqjOgwNYBtnB5oEkjTN0jZdpu//fJe9EMnGgFlmvqtfpYqNDpvlI1meGLEQy4wlOaLx35b9T6gm/yP861X/I5SrKGWRJCqbFQ4MxjSpKBkCoRmdlXArWHrz6XQ6j2WayBw5aqGae4s95dGZaUOEJBbbSiQ5oskBx1WUcstfTQ/Hr0lf8rU7TDeOyampZGFJNSlpeXJAkyNMFT5A++XrtTdsRbkelm54iyosfFRNkhtsJQ87T+53+h5YQMVsfzYMuhzl3LeZxEKoUkdoUubO3weFl8h15jLeAUJCg8PQ2HL5djpAuDoPDaskW0czQudtaEhA7n49hDwWmvyfJkfpj7ixvw8NB5VXl1Ubz/MRP5F00EwOkkHTcJ+HhiKUeZXxoarap1m9DI1DItdAbryC10ZuQ4OokOeWCPdjGADlcrWMFghPQ5uvJEteH2FyxJ+Gtl1RnigwvoCQppLMxQoH3BrfGCiSO+Vl4wtH2IhvxYMmHdbFridHu2y8ik/jflb3eznMTptVEKxiCZxYkoNVctBWFaw2p+n2Um3KO63rte0rpreXwyngqYdPkuchPUqfDn0qxm0WrF8rYH5YpBZCVwpwNwvCB5+qzio1qCjjxJ8fZUa9uFQdIaeyR/Q5dHlFz3ZXCLMJgMz/SCEChNlsP+06EtOSfGS8+JdIq/wV71RlTsWmHU0TaTWxY0n7tJID4TDx5TEW8yQMtrJTl7dblWnYcyHELUFaYSO+cKB/4kY6XxmU9qXfIgOnSCsEochVOzp9wpCqAtFrtFBBuJdcn7EgNEzRJ8eqRkgEs4lV/zAkKsY3uJk/4D0CCPGLc9yzUSGkJvPxJ3VqPyIss/rGCm12t2h9Or1jFXVx9m9Fy60eWH0XpSxucRgmlhp0etcqw3hFn1Mpq2+gpNMt0vTnuNRQoRygV25VRoh+R28Dw5Co+BYzmEoQYtfkbowXoWli7+JBjNBBfn60Roww/NxgX1RfiBDzR/d0cBgyFcXuyhZDyDkn2EixYnLOfHAVWyJWOwRj9U2KPNPTKs58BCrER9kyjNWnAfzl0RhT3ohAZV+Qm0gRr40hAVBnNDCkkRVo+BNDELrI70YEg1DGKK4ykFER8bwZnDp/8REhZBvPW7iMYgh9iHCd5xnlCG04a/Kws1pigzpUuekrdPCxVkj4YZfhyll9hlyHjBoHhP/DUecqu0A7bGzYilFovJsZn42HxgzewnQuCQl/dBTuTsXXRbOWDGkFGbjE+sKIb0Dvh5jwrIM4n2W35WtPYSt4E3d2GSGFs4rnsbhm9GEaeMNyouBQF12IIkLo+/hjQfg4jH1ZSCvorizLCDmYLu9G414DzimgsBUBb9mNpwhj/w7h8Wdd8PNm9HVLxwLlVuAbuKRIK8BOHGN2PmP1CRwrAlMfPx/nEpuWa1q+4zj+3nVDJ5ERotQh9R5N2xDYigLX7WtPiqw+0F+oRu+E+6fnw65Icr28HZ4XbuQzVYYJoO177FyQQ0ud6hQhGE8OXAtCatjO/C7KOXq5zxyLU3mH5uNI8Emwc3HAwHglhOBje2LtEVJunbYfAnQ5yu0yym6WdEgeAjFY+CX8LIHX9VZESEB0NWj7lIYv2gJlwhA5rJgkIZ9YpR9/MtQMunjs9V5EyEFQm7ecChjurE4+3PuJSDosGR8IzACzv3e7wOpbj9pL9H1qTsIb1rRuIv/HjBqiDgtD4p+VITDDBpF585fVhwTGwWhBwjP3uclChT/TrAtwLubf8p+IzDAAzeSbOasPfbZZdPcbupHc+9MAXyQfJ0NwLsosf7HYE8MWmwEmiQHNvTYGBtVTc4TC+KyK7FzRuXJPSGgGALEsIAQMxqYxQnEegZp4da5mSQWi82v2ixAM+KuGCPfSpB4lObsNEYJXzZMhDJohxPjn+rJIE5JqIgRzkJkUIWnAtGvLmH7ileeCKoIizFh98PLEoeKaTLu70wQwSv2pOBeiggPCusDqIwhr+zRonKup7EzpuTCVAKGpDeFeIR+1hlyssSFEYgJAPs7f0erQ6eFN4Wp80XEhFCVSZfIzXfp2mhEbpcTa/nL6UwHR4sMgtLCzSlOmP75XbpRvW57sUGbQxUHW7hLzgcpmCBFG3JANRwteh4SXfWTeTi7hOHXPONl7kg/w0awTC+DQueY5qw/HQ9HqPpSEJ2Ir7wHFSPi8w9A2R7wwbitohXcIpsDSEV95/WIkwoH+7Bt47nW5Q0fo6k3rmNEdQpGr9r5Q9qGXovdxNQaEos/ojcgNKqkg557IlzUChIJHbFFlUFnFBJnJ9/YIY+pYgDDlCNKuE5Y57TpX4fPBaxqrVSf8mYMzV2vlCAKCMGf1BZ63AnWPpaiE8ppzSuqxAGLjH1WHq0UQ4HjokV9Wv7FPw9GR8NaQg0QX/L8Z1WZEB914bZDgieRZxSBUhY47iyERuhirdlMySDkzZvI+IEI0pfhVzSBBWhCWHukNh9BCiN+rJAKhEO2wkEjOC2+FMKaL8W9pFauP5HhMJr7dOBYQqdB8Uc9Q6BBDmLP62HhYzeqb2CLFhVHRqkqFOYEvllndITIe0pzVb+bTwIhd/JVpxCMXVYgDd2KDeG0MOiHvRANCBj/QP4MghCHJZOhqjRBbPBfQARAiax3ONWDIVJDBufEBEIKoarIKQAdCxNlluhFWs/oUPkt3Q1NCvg1pkQ3tn9WHD2lArcpWSipkxnIzqlppZ/Vt4Hy8Scg/s6YKvImXNBe0R68N+h4npg/hGvTu074RgiYfbl0YEhX8jK1Z3wjBhPybaEQIu99Ky+zoRBgfWYQDh2aVkrV6cvWBudeqVrpZfZiu6erM1UeWDux5r6w+HA2PXGuuPgfLP5yqVnp9GgZm91NW03GRqzioDOFVtdKMENBiS6oVIQPjxVO/CE3gV/l6M9mhW/PaL0ILfEptzbn6YI3IsSlCEYthSEl4ELb/4Jor8NiPZ/gkFa30svrmY4OzobkCj3F5PIVrSlvpZfXh5PBb+/pD4NW48lZ6vTY44E+1IwRf634RgpnFXDtCkBC7/9cQAp8iST75hxCCOFTTe9iI1TeR91BzmR3sPZS20svqw/SEA9NcZgcWjeNGn6w+GPHfuGafBq4tJxWt9HptAOGnbq8N+DQf/SLs3i8FXlNjv7QZQhO8Jb7e2RNcdXjoF+EA88NnvQirWH1sjq+1zA4Hl3BGemX1CbhgP5rL7IBPaVppTthKM6tPYF431Vr4E+YDpqS3sJVuRhjypYt6adkVKsDl/VS16p7zPnTLeb/2xnlnXYM0hU9Z4nldhPAlOPUWt7DSrmHsyZPEnqyaKpjm8RB7gq10s/oMejU7jaw+SHm8sN5z9ZFEBceobKWmIjBr6MZ6z9VH6r3cRTDq+jQEJmMsqosb6s8YAlbUW8NQx9bJ1xDZJtCvStx/DQgvoOenIRBC7z90v7UgRBKPnRY5USIWw6gi4U0GK7x9cg2sPvL47wp5bcIO9efqEyT/7JW1ZvWxEpwbMkyuPkHyeU+spU+D5XReVTrsJAsaMWbitMqCxhdwnAZDSJFU/ZdW9xDNO46yVgdCiCZ631vdQ2zp7Empw47WAWM1kg4tEGILg65ql6yLXH1iIymYkyiPsCmrj67RS2ruDJGrHw9E6ALZbb5vbx1W37TQpV1bXm1GB6x+rsLX4b9Z9auAUxdfvp5FnQfwvBMVurZr8pFu9qqOkAV45aXl8GtIBXvMLushpNjYOomXcw+OUFQv4pXVQIjuABDKBx0BQmQ2l8ifkzJC/FGfJJWAukFYpwKPeH+on8Cmola/dXvI4iLqYG6MogIPRtlksgtErfIOl+IKIFF5ynFU4JGUjZj8rC1JCU9XtlX7WdRqgOot5kVsZ+ipLn0ebyZYaEUZN/Yn6V7RR7cWxdxxfRpsNWlR3r/XQbpdQfi1sG1ztT5UbMT7wgaqTyM4K1WplHi5H56eb4c3lU2Gw1lYvVhAtxV4QrEuCmary5HVjQV0WoEnEq6h3N6vnF1eNxbQZQWeREVN1ZKz1XIwaf1YQIcVeHKVZAfNWjLn1edqi7Bh3cRVk8qsj/IR9FE3sWntS3wSW0u2wr2LK8yQ1r7UWL8UrqurJ8sa5yqrRPVLY5dOUIM2oyqSrmOp5uedNhuWb2mtc5VUSA3anNWH2TFTZjXNuufGQmVEx+S6il3tZhn+DKwjcgqsPshe2bar5+3VqeWdyfspe+wa5Tdw4P7Tgk8DFqhc7FYIDV4b4zWqWd4mg8MGBDwrIIQ12Vk7hOHdOFVUfizJbtPiXIkKsCkXu4AQ0p466uoHilV3v54cWV19NTMq6urDtPG1lr0R2OZ2qYB3uS24fG8ENZV4b4SELwZD/ivXknVPDeKvt6J5/M/ryQ/d5zodClUcsHVp3Z5knxkKPJ6LGqtfrYpm89be8Z5ej7/FET+Oh+fZyrfCmb+mDH+DgSBRzDVlu+UitYt8fRnb4Zc8eZpc193v9y4ncUCQ0uYdQhVA8BXliWVeWyjgQZrrRJhlh0cXM3uVdHRYUIGv2i7bDSkBCJNjjh0g7FAFl2fcygiRHC5nfDAkKpjcs6ElhMgOlrfxwZCoYGzVNUsIsb3zUuxj2BK3SmXDG/TG01bZHpYU1iGdpqr0k5wcjXC33FAF6xOk0b3Cbrlwvd1komslYecqbJdYmrX63YcUPqbzUcGQqDh0gM8ZrsJeskgQlo4JhmQeg9RaPOWuvHQ/4O8RwZAhhPTXn99WhT2d4dsak4ots+57UCFB6GlhT+ecGOfIvb6arG3WfecqBvcFDL1qnv8wGw8JerMj10eV1R9KhRU7/y60KiLEiqNuFMr5DariGEHrCxBiN3Hi189u6lPFsHzUgyFCiIz6k6trDA5DrKJ7jNNzhQix8q/Z2DlKhKaF5UjcSq0mGREQt0Dzm7LyRbHUZNo7VmFZ76m3mbdKdsvNOHMYoonknqS1NK2l05nKRKt/TzxWavU74seCTKJC2f5yDyPyaaiF3sHdQ47KI0J8r4OzS0eHkO3xPKWgAiFaSD78ojqsO1sbqXiAR0Zm9kMrgBB/TrMZ5VgQMnSgn0R7RTy2ggiRCsixxPvGjAWhK9iXZsIhQvLImQv3/rmsDN1ldpqpwtmEKHa3ghZOSn3Gn2QuzBfd+pzpIeHbhAm4eA+sKHT92Krs06S5P+KEiqeE/hjOp7G5K47ZHRjSCkNoUkkC15QOitBF5umZnNFACIqQQ468IN8Byctj9IgwuoEr0QcmkquljpAZVLrp+/U52e+vP4SUcebIo62XBKAqQqRMUlle7rOFmxJBJOEL0g0cU/ZAn4px213MztJrHpUkIPglyxA+cuYEYz8e5fP85J2Wm80ykUUspYO2qs3y5H3vFPb5vlpEEAvIR/xE0gsafapdnfmiXcs52nP913irEAuAPo2ROhM680W7lkMcTy4YL/Xa8h+ZRFe+aNcyZcB4JYThj0QLfsYlK2npGjlCA12XOy554/JsOByh9fujsT+ps6pYwC+rL+DM7dWYb+MusKtiAdiIX6bTKRGunRtcPErlxkt8mtKPKLr14uBys5mC8UoIDcMf39h4cNUcXUWEhuGMC+O38t5SyggJc4Rz/77lz9RHLBQhzGb76Y9iwel0yqy1ZCllb3I+WYyjFqLGl1n9KjqdGK5sM/Qe5G1JDVIrFlDh0wAVY/Z++X3UsfqnrnztbhuXV1pY02vDVOHUlO0d73ZvuqyivlzuN2/lR9nS9VnWBggjiZ982/SD5dqbzdaxzBLxSkdtVd566dA4sSJJuO0LYZ5ulfhIiYon7hJJf5gctVfRlmn87RD+DSrI6vfJz/ehQlj93vj5flTKPs1fq/oPZ7LhQO3vgcYAAAAASUVORK5CYII=" alt="">Instagram</a>
-<a class="face" href="https://www.Facebook.com/" target="_blank"><img class="face" id="face" src="data:image/png;base64,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" alt="">Facebook</a>
-<a class="tyc" href="#" target="_blank">Terminos y Condiciones</a>
-<a class="adc" href="#" target="_blank">Arrepentimiento de Compra</a>
-</footer>
-</div>
-<script src="./Js/Main.js" defer></script>
-</body>
+        
+        <div class="banner">
+          <h2>MIRA LAS CONFERENCIAS DISPONIBLES PARA VOS</h22>
+          <h5>Animate a escuchar sus historias en primera persona!</h5>
+          <div style="text-align: center;">
+            <i class="fa-solid fa-star" style="color: #facc57;"></i><i class="fa-solid fa-star" style="color: #facc57;"></i><i class="fa-solid fa-star" style="color: #facc57;"></i>
+          </div>
+        </div>
+
+        <section>
+            <div class="caja-padre">
+
+              <article class="caja-jugadores">
+                <picture class="img-jugador">
+                    <img
+                        src="/Resources/images/oradores/messi.jpg"
+                        alt=""
+                        class=""
+                    />
+                </picture>
+
+                <section class="descripcion-producto">
+                    <section class="descripcion">
+                        <p class="titulo-show">Lionel Messi</p>
+                        <p class="descripcion-show">Historia de Superacion en Barcelona</p>
+                    </section>
+                </section>
+              </article>
+
+              <article class="caja-jugadores">
+                <picture class="img-jugador">
+                    <img
+                        src="/Resources/images/oradores/dimaria.jpg"
+                        alt=""
+                        class=""
+                    />
+                </picture>
+
+                <section class="descripcion-producto">
+                    <section class="descripcion">
+                      <p class="titulo-show">Angel Dimaria</p>
+                      <p class="descripcion-show">El hombre que deja todo por la camiseta</p>
+                    </section>
+                </section>
+              </article>
+
+              <article class="caja-jugadores">
+                <picture class="img-jugador">
+                    <img
+                        src="/Resources/images/oradores/dibu.jpg"
+                        alt=""
+                        class=""
+                    />
+                </picture>
+
+                <section class="descripcion-producto">
+                    <section class="descripcion">
+                      <p class="titulo-show">Dibu Martinez</p>
+                      <p class="descripcion-show">Nos cuenta como vivio los penales en la Final del Mundo!</p>
+                    </section>
+                </section>
+              </article>
+
+              <article class="caja-jugadores">
+                <picture class="img-jugador">
+                    <img
+                        src="/Resources/images/oradores/alvarez.jpg"
+                        alt=""
+                        class=""
+                    />
+                </picture>
+
+                <section class="descripcion-producto">
+                    <section class="descripcion">
+                        <p class="titulo-show">Julian Alvarez</p>
+                        <p class="descripcion-show">El chico promesa que la rompio en el mundial</p>
+                    </section>
+                </section>
+              </article>
+            </div>
+        </section>
+        <div class="caja-botonentradas">
+          <a href="/VentaEntradas.html"class="boton-entradas-body">
+            ENTRADAS
+            <i class="fa-solid fa-ticket" style="color: #000000;"></i>
+        </a>
+        </div>
+        <form class="caja-form">
+          <section class="caja-texto-form">
+            <p class="titulo-form">TE ANIMAS A DAR UNA CONFERNECIA JUNTO A LOS CAMPEONES DEL MUNDO?</p>
+            <p class="text-form">Anotate como ordador para una charla. Cuentanos de que quieres hablar!</p>
+            <div style="text-align: center;">
+              <i class="fa-solid fa-star" style="color: #facc57;"></i><i class="fa-solid fa-star" style="color: #facc57;"></i><i class="fa-solid fa-star" style="color: #facc57;"></i>
+            </div>
+          </section>
+          
+          <div class="row-formulario row g-3">
+            <div class="item-formulario col-sm-6">
+              <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+            </div>
+            <div class="item-formulario col-sm-6">
+              <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+            </div>
+
+            <textarea class="form-control" rows="5" id="comment" name="text" placeholder="¿Sobre que quieres hablar?"></textarea>
+          </div>
+          <div class="caja-boton">
+            <input  id="tonbo" type="submit" value="ENVIAR" class="botones-form-i">
+          </div>
+        </form>
+
+        <footer class="footer">
+          <div class="caja-links-f">
+            <ul>
+              <li>
+                <a class="link-f" href="#">NOSOTROS</a>
+              </li>
+              <li>
+                <a class="link-f" href="#">CONTACTANOS</a>
+              </li>
+              <li>
+                <a class="link-f" href="#">PREGUNTAS FRECUENTES</a>
+              </li>
+              <li>
+                <a class="link-f" href="#">REDES SOCIALES</a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+    </body>
+    
 </html>
