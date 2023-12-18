@@ -14,3 +14,7 @@ El video deberá subirse a alguna plataforma.</p>
   Verges Diego<br>
   Gaspar Gimena
 </p>
+
+<h3 align="center"> 
+
+[LINK](https://dieverges.github.io/grupo6.github.io/)</h3>
