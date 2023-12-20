@@ -1,0 +1,303 @@
+* {
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*BARRA DE NAVEGACION*/
+.logo{
+    height: 70px;
+}
+.boton-entradas{
+    border: solid 4px #43ebd2;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+}
+.boton-entradas:hover{
+    color: #43ebd2;
+}
+.caja-links{
+    display: flex;
+    justify-content: flex-end;
+}
+.barranav{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    list-style: none;
+    align-items: center;
+    width: 100%;
+}
+.nav-item{
+    margin: 8px;
+}
+.link{
+    color: white;
+    text-decoration: none;
+}
+.link:hover{
+    color: #43ebd2;
+}
+@media (min-width: 576px){
+    .barranav{
+        flex-direction: row;
+        justify-content: end;
+    }
+}
+/*SECTION IMG PUBLI*/
+.caja-img{
+    width: 100%;
+}
+/*MAIN BODY JUGADORES*/
+.banner{
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 0px;
+}
+.banner h5{
+    text-align: center;
+}
+.banner h2{
+    text-align: center;
+}
+/*CARD JUGADORES*/
+.caja-padre{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    gap: 1rem;
+}
+.caja-jugadores{
+    width: 100%;
+    border: solid 4px black;
+    display: flex;
+    flex-wrap: wrap;
+}
+.img-jugador{
+    width: 100%;
+}
+.img-jugador img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.descripcion-producto {
+    margin: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.titulo-show {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0px 10px;
+}
+.descripcion-show {
+    font-size: 16px;
+    margin: 6px 10px;
+}
+
+.caja-botonentradas{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+.boton-entradas-body{
+    border: solid 4px #43ebd2;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #000000;
+    text-decoration: none;
+}
+.boton-entradas-body:hover{
+    color: #1e695e;
+}
+/*TABLET*/
+@media (min-width: 530px) {
+    .caja-padre {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem 2rem;
+        gap: 1rem;
+    }
+}
+/*DESKTOP*/
+@media (min-width: 900px) {
+    .caja-padre {
+        grid-template-columns: repeat(4, 1fr);
+        padding: 2rem 2rem;
+        gap: 1rem;
+    }
+}
+/*FORMULARIO*/
+.caja-form{
+    margin: 20px 40px
+}
+.caja-texto-form{
+    text-align: center;
+}
+.titulo-form{
+    font-size: 22px;
+    text-shadow: 0px 0px 9px #0df0e1;
+    margin-bottom: 0rem;
+}
+.text-form{
+    font-size: 16px;
+    margin-bottom: 0rem;
+}
+
+/*FOOTER*/
+.footer{
+    background-color: #000000;
+    margin-bottom: 0rem;
+}
+.footer ul{
+    margin-bottom: 0rem;
+}
+.caja-links-f ul{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    list-style: none;
+    align-items: center;
+    width: 100%;
+}
+.caja-links-f li{
+    padding: 10px;
+}
+.link-f{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+.link-f:hover{
+    color: #43ebd2;
+}
+@media (min-width: 530px){
+    .caja-links-f ul{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .caja-form{
+        margin: 20px 110px
+    }
+}
+
+
+/*VISTA VENTA DE ENTRADAS*/
+.caja-padre-entradas{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    gap: 1rem;
+}
+.caja-card{
+    width: 100%;
+    border: solid 4px #207e70;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #000000;
+    color: white;
+    border-radius: 8px;
+    padding: 15px;
+    flex-direction: column;
+    align-items: center;
+}
+/*TABLET*/
+@media (min-width: 530px) {
+    .caja-padre-entradas {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem 2rem;
+        gap: 1rem;
+    }
+}
+/*DESKTOP*/
+@media (min-width: 900px) {
+    .caja-padre-entradas {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 2rem 2rem;
+        gap: 1rem;
+        margin: 0px 70px;
+    }
+}
+/*BLOQUES TEXTOS*/
+.tipo-entrada{
+    font-size: 20px;
+    font-weight: 600;
+}
+.desc{
+    font-size: 15px;
+    font-weight: 450;
+}
+.descuento{
+    font-size: 25px;
+    font-weight: 650;
+    color: #33b5a1;
+}
+.doc{
+    color: rgba(142,143,151,255);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/*FORMULARIO VENTA DE ENTRADAS*/
+.titulo-form-entrada{
+    font-size: 25px;
+    text-shadow: 0px 0px 9px #0df0e1;
+    margin-bottom: 0rem;
+    text-align: center;
+}
+.cuadro-text{
+    padding: 10px;
+    margin: 8px;
+    border: solid;
+    border-radius: 10px;
+    width: 80%;
+}
+.formu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*BOTONES DE ACCION*/
+.botones-form{
+    border: solid;
+    background-color:#33b5a1;
+    padding: 8px;
+    margin: 0px 10px 10px 10px;
+    border-radius: 10px;
+}
+@media (min-width: 530px){
+    .cuadro-text{
+      width: 35%;  
+    }
+}
+.resultado{
+    color: white;
+    background-color: black;
+    border: solid;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.botones-form-i{
+    border: solid;
+    background-color:#33b5a1;
+    padding: 8px;
+    margin: 0px 10px 10px 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+.caja-boton{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}

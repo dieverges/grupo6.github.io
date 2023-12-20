@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENTRADAS</title>
+    <link rel="stylesheet" href="./Resources/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;1,500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+                <img src="./Resources/images/logo.png" alt="LOGO" class="logo">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="caja-links collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="barranav">
+                  <li class="nav-item">
+                    <a href="VentaEntradas.html"class="boton-entradas">
+                        ENTRADAS
+                        <i class="fa-solid fa-ticket" style="color: #43ebd2;"></i>
+                    </a>
+                  </li>  
+                </ul>
+                
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <section >
+            <img class="caja-img" src="./Resources/images/afa.webp" alt="FOTO PUBLICIDAD">
+        </section>
+        <div class="banner">
+            <h2>ENTRADAS YA DISPONIBLES!</h22>
+            <h5>PRECIO DE ENTRADA $2000</h5>
+            <div style="text-align: center;">
+              <i class="fa-solid fa-star" style="color: #facc57;"></i><i class="fa-solid fa-star" style="color: #facc57;"></i><i class="fa-solid fa-star" style="color: #facc57;"></i>
+            </div>
+        </div>
+        <section>
+            <div class="caja-padre-entradas">
+                <article class="caja-card">
+                    <h1 class="tipo-entrada">SOCIO AFA +</h1>
+                    <p class="desc">Tienen un descuento</p>
+                    <p class="descuento">80%</p>
+                    <h6 class="doc">* Presentar documentacion</h6>
+                </article>
+                <article class="caja-card">
+                    <h1 class="tipo-entrada">SOCIO CLUB</h1>
+                    <p class="desc">Tienen un descuento</p>
+                    <p class="descuento">50%</p>
+                    <h6 class="doc">* Presentar documentacion</h6>
+                </article>
+                <article class="caja-card">
+                    <h1 class="tipo-entrada">INVITADO</h1>
+                    <p class="desc">Tienen un descuento</p>
+                    <p class="descuento">15%</p>
+                    <h6 class="doc">* Presentar documentacion</h6>
+                </article>
+            </div>
+        </section>
+        <section id="formularios" class="caja-form-entradas">
+            <h2 class="titulo-form-entrada">RESERVA TU LUGAR  <i class="fa-solid fa-circle-down" style="color: #000;"></i></h2>
+            <br>
+            <form method="dialog" class="formu">
+              <label for="nombre"></label>
+              <input class="cuadro-text" type="text" placeholder="Escribe tu nombre" name="nombre" id="nombre">
+    
+              <label for="apellido"></label>
+              <input class="cuadro-text" type="text" placeholder="Escribe tu apellido" name="apellido" id="apellido">
+
+              <label for="cantidad"></label>
+              <input class="cuadro-text" type="number" placeholder="Cantidad de Tickets" name="cantidad" id="cantidad">
+
+                <label id="consigna" for="categoria">Categoría</label>
+                <select class="cuadro-text" name="categoria" id="categoria" onchange="">
+                    <option id="afaplus" value="estudiante">AFA PLUS</option>
+                    <option id="socioclub" value="trainee">SOCIO CLUB</option>
+                    <option id="invitado" value="junior">INVITADO</option>
+                </select>
+
+                <p id="resultado" class="resultado"></p>
+                <label id="result" for="resultado"></label>
+
+                <div class="caja-botones">
+                    <input  id="tonbo" type="submit" value="CALCULAR" class="botones-form">
+                    <input id="rese" type="submit" value="RESERVAR" class="botones-form">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="caja-links-f">
+          <ul>
+            <li>
+              <a class="link-f" href="#">NOSOTROS</a>
+            </li>
+            <li>
+              <a class="link-f" href="#">CONTACTANOS</a>
+            </li>
+            <li>
+              <a class="link-f" href="#">PREGUNTAS FRECUENTES</a>
+            </li>
+            <li>
+              <a class="link-f" href="#">REDES SOCIALES</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+      <!-- Archivos JavaScript de Bootstrap y jQuery (si es necesario) -->
+      <script src="./Resources/Js/Main.js" defer></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/edbebacb59.js" crossorigin="anonymous"></script>
+</body>
+</html>
