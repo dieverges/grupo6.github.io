@@ -201,25 +201,41 @@
       }
 
       function enviarDatos() {
-        event.preventDefault();
-        const nombre = document.getElementById('nombre').value;
-        const apellido = document.getElementById('apellido').value;
-        const email = document.getElementById('email').value;
-        const tema = document.getElementById('tema').value;
+  event.preventDefault();
+  
+  // Obtener valores de los campos
+  const nombre = document.getElementById('nombre').value;
+  const apellido = document.getElementById('apellido').value;
+  const email = document.getElementById('email').value;
+  const tema = document.getElementById('tema').value;
 
-        fetch(`endpoint?nombreInput=${nombre}&apellidoInput=${apellido}&emailInput=${email}&temaInput=${tema}`, {
-          method: 'POST'
+  // Validar campos vacíos
+  if (!nombre || !apellido || !email || !tema) {
+    alert("Por favor, completa todos los campos.");
+    return; // Detener la ejecución si hay campos vacíos
+  }
 
-        }).then(response => response.json())
-          .then(data => renderizarCard([data]))
-          .catch(error => console.error('Error:', error));
+  // Si todos los campos están completos, realizar la solicitud
+  fetch(`endpoint?nombreInput=${nombre}&apellidoInput=${apellido}&emailInput=${email}&temaInput=${tema}`, {
+    method: 'POST'
+  })
+    .then(response => response.json())
+    .then(data => {
+      // Mostrar mensaje de éxito
+      alert("Enviado exitosamente");
+      // Renderizar la tarjeta con los datos
+      renderizarCard([data]);
+    })
+    .catch(error => console.error('Error:', error));
 
-        // Limpiar los campos después de enviar
-        document.getElementById('nombre').value = '';
-        document.getElementById('apellido').value = '';
-        document.getElementById('email').value = '';
-        document.getElementById('tema').value = '';
-      }
+  // Limpiar los campos después de enviar
+  document.getElementById('nombre').value = '';
+  document.getElementById('apellido').value = '';
+  document.getElementById('email').value = '';
+  document.getElementById('tema').value = '';
+}
+ 
+      
 
       function renderizarTabla(data) {
         const tabla = document.getElementById('cuerpoTabla');
